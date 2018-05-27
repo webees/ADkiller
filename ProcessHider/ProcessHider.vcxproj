@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43237BF6-7361-4449-ACDE-A2A9180D0DB3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProcessHider</RootNamespace>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)LoneFile\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\LoneFile\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)MainFile\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\local\openssl-1.1.0f-vs2017\include64;D:\local\boost_1_66_0;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\local\openssl-1.1.0f-vs2017\lib64;D:\local\boost_1_66_0\lib64-msvc-14.1;$(LibraryPath)</LibraryPath>
+    <TargetName>ADkiller</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>ws2_32.lib;psapi.lib;iphlpapi.lib;userenv.lib;d3d11.lib;dxgi.lib;version.lib;wbemuuid.lib;libsslMT.lib;libcryptoMT.lib;legacy_stdio_definitions.lib;Crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\c_tool.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_active.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_conf.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_global.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_guard.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_main.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_pc.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\aes256cbc.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\base64.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\md5.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Shared.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Stub.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Unix.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Win32.cpp" />
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_WinRT.cpp" />
+    <ClCompile Include="..\Common\DLLs_hex.cpp" />
+    <ClCompile Include="Daemon.cpp" />
+    <ClCompile Include="GetProcAddressR.cpp" />
+    <ClCompile Include="HiderMain.cpp" />
+    <ClCompile Include="Injector.cpp" />
+    <ClCompile Include="linkedList.cpp" />
+    <ClCompile Include="LoadLibraryR.cpp" />
+    <ClCompile Include="Preparations.cpp" />
+    <ClCompile Include="XGetopt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\c_tool.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_active.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_conf.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_global.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_guard.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_main.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_pc.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\aes256cbc.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\base64.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\config.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\cpu.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\cpuid.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\memory.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\pci.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\scope.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\gpu.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\infoware.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\system.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\json.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\md5.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Internal.h" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\client_http.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\client_https.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\crypto.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\server_http.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\server_https.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\status_code.hpp" />
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\utility.hpp" />
+    <ClInclude Include="..\Common\ArgumentsPassing.h" />
+    <ClInclude Include="..\Common\DLLs_hex.h" />
+    <ClInclude Include="Daemon.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="GetProcAddressR.h" />
+    <ClInclude Include="Injector.h" />
+    <ClInclude Include="linkedList.h" />
+    <ClInclude Include="LoadLibraryR.h" />
+    <ClInclude Include="Preparations.h" />
+    <ClInclude Include="ReflectiveDLLInjection.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="XGetopt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProcessHider.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\BuildOutput\x64Hider.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\infoware.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  </ImportGroup>
+</Project>

